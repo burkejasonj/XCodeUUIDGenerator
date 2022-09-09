@@ -11,7 +11,36 @@
 		8BA704C028CBD83D009CA731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA704BF28CBD83D009CA731 /* ContentView.swift */; };
 		8BA704C228CBD841009CA731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA704C128CBD841009CA731 /* Assets.xcassets */; };
 		8BA704C528CBD841009CA731 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA704C428CBD841009CA731 /* Preview Assets.xcassets */; };
+		8BA704D328CBD8FD009CA731 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA704D228CBD8FD009CA731 /* Cocoa.framework */; };
+		8BA704D528CBD8FD009CA731 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA704D428CBD8FD009CA731 /* XcodeKit.framework */; };
+		8BA704D828CBD8FE009CA731 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA704D728CBD8FE009CA731 /* SourceEditorExtension.swift */; };
+		8BA704DA28CBD8FE009CA731 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA704D928CBD8FE009CA731 /* SourceEditorCommand.swift */; };
+		8BA704DF28CBD8FE009CA731 /* UUIDGenerator.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8BA704D028CBD8FC009CA731 /* UUIDGenerator.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BA704DD28CBD8FE009CA731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BA704B228CBD83C009CA731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA704CF28CBD8FC009CA731;
+			remoteInfo = UUIDGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BA704E328CBD8FE009CA731 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8BA704DF28CBD8FE009CA731 /* UUIDGenerator.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8BA704BA28CBD83C009CA731 /* XCodeUUIDGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCodeUUIDGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +49,13 @@
 		8BA704C128CBD841009CA731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BA704C428CBD841009CA731 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BA704C628CBD841009CA731 /* XCodeUUIDGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCodeUUIDGenerator.entitlements; sourceTree = "<group>"; };
+		8BA704D028CBD8FC009CA731 /* UUIDGenerator.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UUIDGenerator.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA704D228CBD8FD009CA731 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8BA704D428CBD8FD009CA731 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		8BA704D728CBD8FE009CA731 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		8BA704D928CBD8FE009CA731 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		8BA704DB28CBD8FE009CA731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA704DC28CBD8FE009CA731 /* UUIDGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UUIDGenerator.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +66,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BA704CD28CBD8FC009CA731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA704D328CBD8FD009CA731 /* Cocoa.framework in Frameworks */,
+				8BA704D528CBD8FD009CA731 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				8BA704BC28CBD83C009CA731 /* XCodeUUIDGenerator */,
+				8BA704D628CBD8FE009CA731 /* UUIDGenerator */,
+				8BA704D128CBD8FD009CA731 /* Frameworks */,
 				8BA704BB28CBD83C009CA731 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA704BA28CBD83C009CA731 /* XCodeUUIDGenerator.app */,
+				8BA704D028CBD8FC009CA731 /* UUIDGenerator.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +117,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8BA704D128CBD8FD009CA731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA704D228CBD8FD009CA731 /* Cocoa.framework */,
+				8BA704D428CBD8FD009CA731 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BA704D628CBD8FE009CA731 /* UUIDGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				8BA704D728CBD8FE009CA731 /* SourceEditorExtension.swift */,
+				8BA704D928CBD8FE009CA731 /* SourceEditorCommand.swift */,
+				8BA704DB28CBD8FE009CA731 /* Info.plist */,
+				8BA704DC28CBD8FE009CA731 /* UUIDGenerator.entitlements */,
+			);
+			path = UUIDGenerator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +147,34 @@
 				8BA704B628CBD83C009CA731 /* Sources */,
 				8BA704B728CBD83C009CA731 /* Frameworks */,
 				8BA704B828CBD83C009CA731 /* Resources */,
+				8BA704E328CBD8FE009CA731 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8BA704DE28CBD8FE009CA731 /* PBXTargetDependency */,
 			);
 			name = XCodeUUIDGenerator;
 			productName = XCodeUUIDGenerator;
 			productReference = 8BA704BA28CBD83C009CA731 /* XCodeUUIDGenerator.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8BA704CF28CBD8FC009CA731 /* UUIDGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA704E028CBD8FE009CA731 /* Build configuration list for PBXNativeTarget "UUIDGenerator" */;
+			buildPhases = (
+				8BA704CC28CBD8FC009CA731 /* Sources */,
+				8BA704CD28CBD8FC009CA731 /* Frameworks */,
+				8BA704CE28CBD8FC009CA731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UUIDGenerator;
+			productName = UUIDGenerator;
+			productReference = 8BA704D028CBD8FC009CA731 /* UUIDGenerator.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +187,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					8BA704B928CBD83C009CA731 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					8BA704CF28CBD8FC009CA731 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -118,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				8BA704B928CBD83C009CA731 /* XCodeUUIDGenerator */,
+				8BA704CF28CBD8FC009CA731 /* UUIDGenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +220,13 @@
 			files = (
 				8BA704C528CBD841009CA731 /* Preview Assets.xcassets in Resources */,
 				8BA704C228CBD841009CA731 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA704CE28CBD8FC009CA731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +242,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BA704CC28CBD8FC009CA731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA704D828CBD8FE009CA731 /* SourceEditorExtension.swift in Sources */,
+				8BA704DA28CBD8FE009CA731 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BA704DE28CBD8FE009CA731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BA704CF28CBD8FC009CA731 /* UUIDGenerator */;
+			targetProxy = 8BA704DD28CBD8FE009CA731 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8BA704C728CBD841009CA731 /* Debug */ = {
@@ -263,6 +378,7 @@
 		8BA704CA28CBD841009CA731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = XCodeUUIDGenerator/XCodeUUIDGenerator.entitlements;
@@ -293,6 +409,7 @@
 		8BA704CB28CBD841009CA731 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = XCodeUUIDGenerator/XCodeUUIDGenerator.entitlements;
@@ -320,6 +437,60 @@
 			};
 			name = Release;
 		};
+		8BA704E128CBD8FE009CA731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = UUIDGenerator/UUIDGenerator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BP7BN4643;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UUIDGenerator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UUIDGenerator;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burkejasonj.XCodeUUIDGenerator.UUIDGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8BA704E228CBD8FE009CA731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = UUIDGenerator/UUIDGenerator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BP7BN4643;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UUIDGenerator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UUIDGenerator;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burkejasonj.XCodeUUIDGenerator.UUIDGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +508,15 @@
 			buildConfigurations = (
 				8BA704CA28CBD841009CA731 /* Debug */,
 				8BA704CB28CBD841009CA731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA704E028CBD8FE009CA731 /* Build configuration list for PBXNativeTarget "UUIDGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA704E128CBD8FE009CA731 /* Debug */,
+				8BA704E228CBD8FE009CA731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
